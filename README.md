@@ -1,13 +1,12 @@
-# Sample Hardhat Project
+# Voting Smart Contract deployed on SwissTronik EVM Testnet
+This is a basic smart contract for a voting system that allows only registered members to vote and it is deployed on Swisstronik testnet. Only contract owner can register new voters and only registered voters can interact with the contract. Registered voters will be able to cast their votes.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+# [Transaction Hash to deployed contract address](https://explorer-evm.testnet.swisstronik.com/address/0x86498F56A6567105Df334CcB3B4F7fE88dFED39d)
 
-Try running some of the following tasks:
+## Contract Address: 0x86498F56A6567105Df334CcB3B4F7fE88dFED39d
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+# Run project locally after cloning the repo 
+```
+yarn hardhat compile
+yarn hardhat run --network swisstronik ./scripts/Voting.ts
 ```
